@@ -1,20 +1,20 @@
 # Teleport
 
-Teleport is an extensible scripting toolkit for working with one or more local MODX Revolution installations.
+Teleport является расширяемым скриптовым инструментом для работы с одной или несколькими локальными установками MODx Revolution.
 
-Teleport currently functions primarily as a packaging toolkit which extends the MODX Transport APIs and provides commands for extracting and injecting customizable snapshots of MODX deployments. But it can be extended easily to perform an infinite variety of actions related to MODX.
+Teleport в настоящее время функционирует приемущественно в качестве упаковочного инструмента который расширяет Транспортный API MODX'а и даёт команды для извлечения и инъекций кастомных слепков сайтов на MODX.Телепорт в настоящее время функции, прежде всего, в качестве упаковочного инструментария, который расширяет API, MODX транспорта и обеспечивает команды для извлечения и инъекционных настраиваемые снимки развертывания MODX. Но он может быть легко расширен для выполнения бесконечного множества действий, связанных с MODX.
 
 
-## Requirements
+## Требования
 
-In order to use Teleport, your environment must at least meet the following requirements:
+Для того, чтобы использовать телепорт, ваша рабочая среда должна, по крайней мере соответствовать следующим требованиям:
 
 * PHP >= 5.4
 * MODX Revolution >= 2.1 (MySQL)
 
-You must also be able to run PHP using the CLI SAPI.
+Вы также должны иметь возможность запускать PHP с помощью CLI SAPI.
 
-NOTE: At the current time, various Teleport Extract tpls only support MySQL deployments of MODX Revolution.
+_ПРИМЕЧАНИЕ_: At the current time, various Teleport Extract tpls only support MySQL deployments of MODX Revolution.
 
 Usage on Linux environments with the PHP posix extension can take advantage of advanced user-switching features.
 
@@ -25,7 +25,7 @@ Teleport strives to be a multi-platform tool, and currently works equally well i
 
 There are several methods for installing Teleport. The easiest way to get started is by installing the Teleport Phar distribution.
 
-_IMPORTANT: Using any of the installation methods, make sure you are running Teleport as the same user PHP runs as when executed by the web server. Failure to do so can corrupt your MODX site by injecting and/or caching files with incorrect file ownership._
+_ВАЖНО: Using any of the installation methods, make sure you are running Teleport as the same user PHP runs as when executed by the web server. Failure to do so can corrupt your MODX site by injecting and/or caching files with incorrect file ownership._
 
 ### Download and Install Phar
 
@@ -48,7 +48,7 @@ Extract a Snapshot from the MODX site you just profiled:
 
 Alternatively, you can install Teleport using the source and [Composer](http://getcomposer.org/). Learn more about using [git clone](doc/install/git-clone.md) or a [release archive](doc/install/releases.md).
 
-_IMPORTANT: If you want to use the Teleport HTTP Server you cannot use the Phar distribution. You MUST use one of the other installation methods._
+_ВАЖНО: If you want to use the Teleport HTTP Server you cannot use the Phar distribution. You MUST use one of the other installation methods._
 
 ### Teleport in your PATH
 
@@ -59,7 +59,7 @@ With any of the installation methods you can create an executable symlink called
 
 In all of the usage examples that follow, call teleport based on how you have installed the application. For example, if you installed from source, substitute `bin/teleport` for `php teleport.phar`; if you have created an executable symlink to the teleport.phar, substitute `teleport` for `php teleport.phar` in the sample commands. The following examples assume you have installed the teleport.phar distribution.
 
-_NOTE: **Before** using Teleport with a MODX site, you will need to **create a Teleport Profile** from the installed site._
+_ПРИМЕЧАНИЕ: **Before** using Teleport with a MODX site, you will need to **create a Teleport Profile** from the installed site._
 
 ### Create a MODX Site Profile
 
@@ -85,7 +85,7 @@ You can also Extract a Teleport snapshot and push it to any valid stream target 
 
 In either case, the absolute path to the snapshot is returned by the process as the final output. You can use this as the path for an Inject source.
 
-_NOTE: The workspace copy is removed after it is pushed unless you pass --preserveWorkspace to the CLI command._
+_ПРИМЕЧАНИЕ: The workspace copy is removed after it is pushed unless you pass --preserveWorkspace to the CLI command._
 
 Learn more about the [Teleport Extract](doc/use/extract.md) Action.
 
@@ -95,7 +95,7 @@ You can Inject a Teleport snapshot from any valid stream source into a MODX site
 
     php teleport.phar --action=Inject --profile=profile/mysite.profile.json --source=workspace/mysite_develop-120315.1106.30-2.2.1-dev.transport.zip
 
-_NOTE: If the source is not within the workspace/ directory a copy will be pulled to that location and then removed after the Inject completes unless --preserveWorkspace is passed._
+_ПРИМЕЧАНИЕ: If the source is not within the workspace/ directory a copy will be pulled to that location and then removed after the Inject completes unless --preserveWorkspace is passed._
 
 Learn more about the [Teleport Inject](doc/use/inject.md) Action.
 
@@ -105,7 +105,7 @@ You can create a user in a profiled MODX site using the following command:
 
     php teleport.phar --action=UserCreate --profile=profile/mysite.profile.json --username=superuser --password=password --sudo --active --fullname="Test User" --email=testuser@example.com
 
-_NOTE: This uses the security/user/create processor from the site in the specified profile to create a user, and the action accepts any properties the processor does._
+_ПРИМЕЧАНИЕ: This uses the security/user/create processor from the site in the specified profile to create a user, and the action accepts any properties the processor does._
 
 Learn more about the [Teleport UserCreate](doc/use/user-create.md) Action.
 
