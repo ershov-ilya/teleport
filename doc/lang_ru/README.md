@@ -14,16 +14,16 @@ Teleport в настоящее время функционирует прием�
 
 Вы также должны иметь возможность запускать PHP с помощью CLI SAPI.
 
-_ПРИМЕЧАНИЕ_: At the current time, various Teleport Extract tpls only support MySQL deployments of MODX Revolution.
+_ПРИМЕЧАНИЕ_: В настоящее время, все варианты шаблонов извлечения Teleport поддерживают только MySQL инсталяции MODX Revolution.
 
-Usage on Linux environments with the PHP posix extension can take advantage of advanced user-switching features.
+Использование в среде Linux с расширением PHP POSIX может дать возможность использовать передовые функции переключения пользователелей.
 
-Teleport strives to be a multi-platform tool, and currently works equally well in Linux and OS X environments. Windows support is unknown at this time; Windows contributors wanted.
+Teleport стремится быть мультиплатформенным инструментом, и в настоящее время работает одинаково хорошо и в Linux и в OS X окружении. Поддержка на платформе Windows в настоящее время неизвестна - требуются разработчики в среде Windows.
 
 
-## Installation
+## Установка
 
-There are several methods for installing Teleport. The easiest way to get started is by installing the Teleport Phar distribution.
+Есть несколько методов установки Teleport. Самый простой пууть начать - это установка PHAR дистрибутива Teleport.
 
 _ВАЖНО: Using any of the installation methods, make sure you are running Teleport as the same user PHP runs as when executed by the web server. Failure to do so can corrupt your MODX site by injecting and/or caching files with incorrect file ownership._
 
