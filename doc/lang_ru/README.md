@@ -39,7 +39,7 @@ _ВАЖНО: Используя любой из способов установ�
 
     php teleport.phar --action=Profile --name="MyMODXSite" --code=mymodxsite --core_path=/path/to/mysite/modx/core/ --config_key=config
 
-**Извлеките Слепок** MODX сайта который вы только что _профилировали_:
+**Извлеките Снимок** MODX сайта который вы только что _профилировали_:
 
     php teleport.phar --action=Extract --profile=profile/mymodxsite.profile.json --tpl=phar://teleport.phar/tpl/develop.tpl.json
 
@@ -71,23 +71,23 @@ _ПРИМЕЧАНИЕ: **Перед** использованием Teleport на
 
 Более подробно [Teleport Профили](doc/lang_ru/use/profile.md).
 
-### Extract a Snapshot of a MODX Site
+### Извлечение Снимка сайта MODX
 
-You can Extract a Teleport snapshot from a MODX site using the following command:
+Вы можете извлечь Teleport Снимок из сайта MODX используя следующую команду:
 
     php teleport.phar --action=Extract --profile=profile/mysite.profile.json --tpl=phar://teleport.phar/tpl/develop.tpl.json
 
-The snapshot will be located in the workspace/ directory if it is created successfully.
+Снимок, в случае успешного создания, будет расположен в директории `workspace/`.
 
-You can also Extract a Teleport snapshot and push it to any valid stream target using the following command:
+Вы также можете Извлечь Teleport Снимок и отправить в любой валидный поток назначения (push) используюя следующую команду:
 
     php teleport.phar --action=Extract --profile=profile/mysite.profile.json --tpl=phar://teleport.phar/tpl/develop.tpl.json --target=s3://mybucket/snapshots/ --push
 
-In either case, the absolute path to the snapshot is returned by the process as the final output. You can use this as the path for an Inject source.
+В любом случае, абсолютный путь к Снимку возвращается в процессе в качестве результата выполнения команды. Вы можете использовать этот путь в качестве источника для Инъекции.
 
-_ПРИМЕЧАНИЕ: The workspace copy is removed after it is pushed unless you pass --preserveWorkspace to the CLI command._
+_ПРИМЕЧАНИЕ: Копия workspace удаляется, после отправки в поток назначения (push) если только вы не укажете ключ `--preserveWorkspace` в качестве параметра CLI консольной команды._
 
-Learn more about the [Teleport Extract](doc/use/extract.md) Action.
+Читайте подробнее о действии [Teleport Извлечения](doc/lang_ru/use/extract.md).
 
 ### Inject a Snapshot into a MODX Site
 
@@ -97,7 +97,7 @@ You can Inject a Teleport snapshot from any valid stream source into a MODX site
 
 _ПРИМЕЧАНИЕ: If the source is not within the workspace/ directory a copy will be pulled to that location and then removed after the Inject completes unless --preserveWorkspace is passed._
 
-Learn more about the [Teleport Inject](doc/use/inject.md) Action.
+Learn more about the [Teleport Inject](doc/lang_ru/use/inject.md) Action.
 
 ### UserCreate
 
@@ -107,12 +107,12 @@ You can create a user in a profiled MODX site using the following command:
 
 _ПРИМЕЧАНИЕ: This uses the security/user/create processor from the site in the specified profile to create a user, and the action accepts any properties the processor does._
 
-Learn more about the [Teleport UserCreate](doc/use/user-create.md) Action.
+Learn more about the [Teleport UserCreate](doc/lang_ru/use/user-create.md) Action.
 
 
 ## Get Started
 
-Learn more about Teleport in the [documentation](doc/index.md).
+Learn more about Teleport in the [documentation](doc/lang_ru/index.md).
 
 ## License
 
