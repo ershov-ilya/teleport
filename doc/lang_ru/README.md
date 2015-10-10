@@ -59,17 +59,17 @@ _ВАЖНО: Если вы хотите использовать Teleport HTTP S
 
 Во всех случаях используйте teleport, в зависимости от того, как вы установили приложение. Например, если вы установили из исходников, пишите `bin/teleport` вместо `php teleport.phar`; если вы создали символьную ссылку на teleport.phar, пишите `teleport` вместо `php teleport.phar` во всех примерах команд. Последующие примеры предполагают, что вы установили дистрибутив teleport.phar.
 
-_ПРИМЕЧАНИЕ: **Перед** использованием Teleport на сайте MODX, вам необходимо **создать Teleport Профиль** из установленного сайта._
+_ПРИМЕЧАНИЕ: **Перед** использованием Teleport на сайте MODX, вам необходимо **создать Teleport Профиль** из существующего сайта._
 
 ### Create a MODX Site Profile
 
-You can create a Teleport Profile of an existing MODX site using the following command:
+Вы можете создать Teleport Профиль любого существующего сайта MODX с помощью следующей команды:
 
     php teleport.phar --action=Profile --name="MySite" --code=mysite --core_path=/path/to/mysite/modx/core/ --config_key=config
 
-The resulting file would be located at profile/mysite.profile.json and could then be used for Extract or Inject commands to be run against the site represented in the profile.
+Результирующий файл будет расположен в `profile/mysite.profile.json` и затем может быть использован для команды Извлечения или Инъекции в другой сайт, не тот который был использован для создания профиля.
 
-Learn more about [Teleport Profiles](doc/use/profile.md).
+Более подробно [Teleport Профили](doc/lang_ru/use/profile.md).
 
 ### Extract a Snapshot of a MODX Site
 
