@@ -46,13 +46,13 @@ _ВАЖНО: Используя любой из способов установ�
 
 ### Другие методы установки
 
-Alternatively, you can install Teleport using the source and [Composer](http://getcomposer.org/). Learn more about using [git clone](doc/install/git-clone.md) or a [release archive](doc/install/releases.md).
+Как вариат, вы можете установить Teleport из исходников с использованием [Composer'а](http://getcomposer.org/). Изучите больше об использовании [git clone](doc/install/git-clone.md) или [release archive](doc/install/releases.md).
 
-_ВАЖНО: If you want to use the Teleport HTTP Server you cannot use the Phar distribution. You MUST use one of the other installation methods._
+_ВАЖНО: Если вы хотите использовать Teleport HTTP Server вы не можете использовать дистрибутив Phar. Вам ПРИДЁТСЯ использовать один из других методов установки._
 
-### Teleport in your PATH
+### Teleport в вашем PATH
 
-With any of the installation methods you can create an executable symlink called teleport pointing to bin/teleport, or directly to the teleport.phar. You can then simply type `teleport` instead of `bin/teleport` or `php teleport.phar` to execute the teleport application.
+С любым типом установки вы можете создать исполнимую символьную ссылку и назвать её **teleport** указывающую на bin/teleport, или прямо на teleport.phar. Вы сможете просто писать `teleport` вместо `bin/teleport` или `php teleport.phar` для вызова приложения teleport.
 
 
 ## Basic Usage
