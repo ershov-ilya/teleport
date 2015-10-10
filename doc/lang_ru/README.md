@@ -55,11 +55,11 @@ _ВАЖНО: Если вы хотите использовать Teleport HTTP S
 С любым типом установки вы можете создать исполнимую символьную ссылку и назвать её **teleport** указывающую на bin/teleport, или прямо на teleport.phar. Вы сможете просто писать `teleport` вместо `bin/teleport` или `php teleport.phar` для вызова приложения teleport.
 
 
-## Basic Usage
+## Базовое использование
 
-In all of the usage examples that follow, call teleport based on how you have installed the application. For example, if you installed from source, substitute `bin/teleport` for `php teleport.phar`; if you have created an executable symlink to the teleport.phar, substitute `teleport` for `php teleport.phar` in the sample commands. The following examples assume you have installed the teleport.phar distribution.
+Во всех случаях используйте teleport, в зависимости от того, как вы установили приложение. Например, если вы установили из исходников, пишите `bin/teleport` вместо `php teleport.phar`; если вы создали символьную ссылку на teleport.phar, пишите `teleport` вместо `php teleport.phar` во всех примерах команд. Последующие примеры предполагают, что вы установили дистрибутив teleport.phar.
 
-_ПРИМЕЧАНИЕ: **Before** using Teleport with a MODX site, you will need to **create a Teleport Profile** from the installed site._
+_ПРИМЕЧАНИЕ: **Перед** использованием Teleport на сайте MODX, вам необходимо **создать Teleport Профиль** из установленного сайта._
 
 ### Create a MODX Site Profile
 
