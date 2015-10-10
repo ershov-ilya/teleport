@@ -99,15 +99,15 @@ _ПРИМЕЧАНИЕ: Если Источник не находится в ди
 
 Читайте подробнее о действии [Teleport Инъекции](doc/lang_ru/use/inject.md).
 
-### UserCreate
+### СозданиеПользователя
 
-You can create a user in a profiled MODX site using the following command:
+Вы можете создать пользователя в профилированном сайте MODX используя следующую команду:
 
     php teleport.phar --action=UserCreate --profile=profile/mysite.profile.json --username=superuser --password=password --sudo --active --fullname="Test User" --email=testuser@example.com
 
-_ПРИМЕЧАНИЕ: This uses the security/user/create processor from the site in the specified profile to create a user, and the action accepts any properties the processor does._
+_ПРИМЕЧАНИЕ: Она использует процессор `security/user/create` сайта в указанном профиле для создания пользователя, и действие принимает все параметры, которые принимает данный процессор._
 
-Learn more about the [Teleport UserCreate](doc/lang_ru/use/user-create.md) Action.
+Читайте подробнее о действии [Teleport СозданиеПользователя](doc/lang_ru/use/user-create.md).
 
 
 ## Get Started
