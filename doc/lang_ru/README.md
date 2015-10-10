@@ -118,4 +118,4 @@ _ПРИМЕЧАНИЕ: Она использует процессор `security/
 
 Teleport is Copyright (c) MODX, LLC
 
-For the full copyright and license information, please view the [LICENSE](./LICENSE "LICENSE") file that was distributed with this source code.
+Для полной информации об авторском праве и лицензии смотрите [LICENSE](./LICENSE "LICENSE") файл, который распространяется с этим кодом.
