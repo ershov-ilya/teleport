@@ -27,24 +27,24 @@ Teleport стремится быть мультиплатформенным ин
 
 _ВАЖНО: Используя любой из способов установки, убедитесь, что вы выполняете Teleport под тем же пользователем, под которым работает PHP когда исполняется веб-сервром. В противном случае может ваш MODx сайт может быть повреждён путем инъекии и/или кэширования файлов с некорректным владельцем файлов._
 
-### Download and Install Phar
+### Скачиивание и установка Phar
 
-Create a working directory for Teleport and cd to that directory, e.g.
+Создайте рабочую директорию для Teleport'а и перейдите в неё:
 
     mkdir ~/teleport/ && cd ~/teleport/
 
-Download the latest [`teleport.phar`](http://modx.s3.amazonaws.com/releases/teleport/teleport.phar "teleport.phar") distribution of Teleport into your Teleport working directory.
+Скачайте последнюю версию [`teleport.phar`](http://modx.s3.amazonaws.com/releases/teleport/teleport.phar "teleport.phar") дистрибутива Teleport в вашу рабочую директорию Teleport'а.
 
-Create a Profile of a MODX site:
+Создайте **Профиль** MODX сайта:
 
     php teleport.phar --action=Profile --name="MyMODXSite" --code=mymodxsite --core_path=/path/to/mysite/modx/core/ --config_key=config
 
-Extract a Snapshot from the MODX site you just profiled:
+**Извлеките Слепок** MODX сайта который вы только что _профилировали_:
 
     php teleport.phar --action=Extract --profile=profile/mymodxsite.profile.json --tpl=phar://teleport.phar/tpl/develop.tpl.json
 
 
-### Other Installation Methods
+### Другие методы установки
 
 Alternatively, you can install Teleport using the source and [Composer](http://getcomposer.org/). Learn more about using [git clone](doc/install/git-clone.md) or a [release archive](doc/install/releases.md).
 
