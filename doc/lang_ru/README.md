@@ -61,7 +61,7 @@ _ВАЖНО: Если вы хотите использовать Teleport HTTP S
 
 _ПРИМЕЧАНИЕ: **Перед** использованием Teleport на сайте MODX, вам необходимо **создать Teleport Профиль** из существующего сайта._
 
-### Create a MODX Site Profile
+### Создание Профиля сайта MODX
 
 Вы можете создать Teleport Профиль любого существующего сайта MODX с помощью следующей команды:
 
@@ -112,9 +112,9 @@ _ПРИМЕЧАНИЕ: Она использует процессор `security/
 
 ## Как Начать
 
-Learn more about Teleport in the [documentation](doc/lang_ru/index.md).
+Как Начать использовать Teleport читайте подробнее [documentation](doc/lang_ru/index.md).
 
-## License
+## Лицензия
 
 Teleport is Copyright (c) MODX, LLC
 
